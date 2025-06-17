@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Details</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body id="#top">
+
+  <!-- Header -->
+  <header class="header" data-header>
+    <div class="container">
+
+      <div class="overlay" data-overlay></div>
+
+      <a href="./index.html" class="logo">
+        <img src="./assets/images/logo.svg" alt="Filmlane logo">
+      </a>
+
+      <div class="header-actions">
+
+        <button class="search-btn">
+          <ion-icon name="search-outline"></ion-icon>
+        </button>
+
+        <div class="lang-wrapper">
+          <label for="language">
+            <ion-icon name="globe-outline"></ion-icon>
+          </label>
+
+          <select name="language" id="language">
+            <option value="en">EN</option>
+            <option value="au">AU</option>
+            <option value="ar">AR</option>
+            <option value="tu">TU</option>
+          </select>
+        </div>
+
+        <button class="btn btn-primary">Sign in</button>
+
+      </div>
+
+      <button class="menu-open-btn" data-menu-open-btn>
+        <ion-icon name="reorder-two"></ion-icon>
+      </button>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+
+          <a href="./index.html" class="logo">
+            <img src="./assets/images/logo.svg" alt="Filmlane logo">
+          </a>
+
+          <button class="menu-close-btn" data-menu-close-btn>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+
+        </div>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="./index.html" class="navbar-link">Home</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">Movie</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">Tv Show</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">Web Series</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">Pricing</a>
+          </li>
+
+        </ul>
+
+        <ul class="navbar-social-list">
+
+          <li>
+            <a href="#" class="navbar-social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-social-link">
+              <ion-icon name="logo-pinterest"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+    <article>
+
+      <!-- Movie Detail Section -->
+      <section class="movie-detail">
+        <div class="container">
+
+          <figure class="movie-detail-banner">
+            <img src="./assets/images/movie-4.png" alt="Movie poster" id="detail-poster">
+            <button class="play-btn">
+              <ion-icon name="play-circle-outline"></ion-icon>
+            </button>
+          </figure>
+
+          <div class="movie-detail-content">
+
+            <p class="detail-subtitle">New Episodes</p>
+
+            <h1 class="h1 detail-title" id="detail-title">
+              Free <strong>Guy</strong>
+            </h1>
+
+            <div class="meta-wrapper">
+
+              <div class="badge-wrapper">
+                <div class="badge badge-fill">PG 13</div>
+                <div class="badge badge-outline">HD</div>
+              </div>
+
+              <div class="ganre-wrapper" id="detail-genres">
+                <a href="#">Comedy,</a>
+                <a href="#">Action,</a>
+                <a href="#">Adventure,</a>
+                <a href="#">Science Fiction</a>
+              </div>
+
+              <div class="date-time">
+
+                <div>
+                  <ion-icon name="calendar-outline"></ion-icon>
+                  <time datetime="2021" id="detail-year">2021</time>
+                </div>
+
+                <div>
+                  <ion-icon name="time-outline"></ion-icon>
+                  <time datetime="PT115M" id="detail-duration">115 min</time>
+                </div>
+
+              </div>
+
+            </div>
+
+            <p class="storyline" id="detail-storyline">
+              A bank teller called Guy realizes he is a background character in an open world video game called Free
+              City that will soon go offline.
+            </p>
+
+            <div class="details-actions">
+
+              <button class="share">
+                <ion-icon name="share-social"></ion-icon>
+                <span>Share</span>
+              </button>
+
+              <div class="title-wrapper">
+                <p class="title">Prime Video</p>
+                <p class="text">Streaming Channels</p>
+              </div>
+
+              <button class="btn btn-primary">
+                <ion-icon name="play"></ion-icon>
+                <span>Watch Now</span>
+              </button>
+
+            </div>
+
+            <a href="./assets/images/movie-4.png" download class="download-btn" id="detail-download">
+              <span>Download</span>
+              <ion-icon name="download-outline"></ion-icon>
+            </a>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- TV Series Section -->
+      <section class="tv-series">
+        <div class="container">
+
+          <p class="section-subtitle">Best TV Series</p>
+
+          <h2 class="h2 section-title">World Best TV Series</h2>
+
+          <ul class="movies-list">
+
+            <li>
+              <div class="movie-card">
+
+                <a href="./movie-details.html?title=Moon+Knight&year=2022&duration=47&rating=8.6&image=series-1.png&video=&genre=Action,Adventure,Fantasy&storyline=Steven+Grant+discovers+he%27s+been+granted+the+powers+of+an+Egyptian+moon+god.+But+he+soon+finds+out+that+these+newfound+powers+can+be+both+a+blessing+and+a+curse+to+his+tormented+life.">
+                  <figure class="card-banner">
+                    <img src="./assets/images/series-1.png" alt="Moon Knight movie poster">
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./movie-details.html?title=Moon+Knight&year=2022&duration=47&rating=8.6&image=series-1.png&video=&genre=Action,Adventure,Fantasy&storyline=Steven+Grant+discovers+he%27s+been+granted+the+powers+of+an+Egyptian+moon+god.+But+he+soon+finds+out+that+these+newfound+powers+can+be+both+a+blessing+and+a+curse+to+his+tormented+life.">
+                    <h3 class="card-title">Moon Knight</h3>
+                  </a>
+
+                  <time datetime="2022">2022</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">2K</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="PT47M">47 min</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <data>8.6</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="movie-card">
+
+                <a href="./movie-details.html?title=Halo&year=2022&duration=59&rating=8.8&image=series-2.png&video=&genre=Action,Adventure,Sci-Fi&storyline=In+the+26th+century,+humanity+is+locked+in+a+war+with+the+Covenant,+a+theocratic+alliance+of+aliens+who+believe+the+path+to+salvation+is+the+extermination+of+the+human+race.">
+                  <figure class="card-banner">
+                    <img src="./assets/images/series-2.png" alt="Halo movie poster">
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./movie-details.html?title=Halo&year=2022&duration=59&rating=8.8&image=series-2.png&video=&genre=Action,Adventure,Sci-Fi&storyline=In+the+26th+century,+humanity+is+locked+in+a+war+with+the+Covenant,+a+theocratic+alliance+of+aliens+who+believe+the+path+to+salvation+is+the+extermination+of+the+human+race.">
+                    <h3 class="card-title">Halo</h3>
+                  </a>
+
+                  <time datetime="2022">2022</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">2K</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="PT59M">59 min</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <data>8.8</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="movie-card">
+
+                <a href="./movie-details.html?title=Vikings:+Valhalla&year=2022&duration=51&rating=8.3&image=series-3.png&video=&genre=Action,Adventure,Drama&storyline=A+sequel+to+History's+VIKINGS,+set+100+years+later+and+centering+on+the+adventures+of+Leif+Erikson,+Freydis,+Harald+Hardrada,+and+the+Norman+King+William+the+Conqueror.">
+                  <figure class="card-banner">
+                    <img src="./assets/images/series-3.png" alt="Vikings: Valhalla movie poster">
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./movie-details.html?title=Vikings:+Valhalla&year=2022&duration=51&rating=8.3&image=series-3.png&video=&genre=Action,Adventure,Drama&storyline=A+sequel+to+History's+VIKINGS,+set+100+years+later+and+centering+on+the+adventures+of+Leif+Erikson,+Freydis,+Harald+Hardrada,+and+the+Norman+King+William+the+Conqueror.">
+                    <h3 class="card-title">Vikings: Valhalla</h3>
+                  </a>
+
+                  <time datetime="2022">2022</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">2K</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="PT51M">51 min</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <data>8.3</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="movie-card">
+
+                <a href="./movie-details.html?title=Money+Heist&year=2017&duration=70&rating=8.3&image=series-4.png&video=&genre=Action,Crime,Mystery&storyline=An+unusual+group+of+robbers+attempt+to+carry+out+the+most+perfect+robbery+in+Spanish+history+—+stealing+2.4+billion+euros+from+the+Royal+Mint+of+Spain.">
+                  <figure class="card-banner">
+                    <img src="./assets/images/series-4.png" alt="Money Heist movie poster">
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./movie-details.html?title=Money+Heist&year=2017&duration=70&rating=8.3&image=series-4.png&video=&genre=Action,Crime,Mystery&storyline=An+unusual+group+of+robbers+attempt+to+carry+out+the+most+perfect+robbery+in+Spanish+history+—+stealing+2.4+billion+euros+from+the+Royal+Mint+of+Spain.">
+                    <h3 class="card-title">Money Heist</h3>
+                  </a>
+
+                  <time datetime="2017">2017</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">4K</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="PT70M">70 min</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <data>8.3</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand-wrapper">
+
+          <a href="./index.html" class="logo">
+            <img src="./assets/images/logo.svg" alt="Filmlane logo">
+          </a>
+
+          <ul class="footer-list">
+
+            <li>
+              <a href="./index.html" class="footer-link">Home</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Movie</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">TV Show</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Web Series</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Pricing</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="quicklink-wrapper">
+
+          <ul class="quicklink-list">
+
+            <li>
+              <a href="#" class="quicklink-link">Faq</a>
+            </li>
+
+            <li>
+              <a href="#" class="quicklink-link">Help center</a>
+            </li>
+
+            <li>
+              <a href="#" class="quicklink-link">Terms of use</a>
+            </li>
+
+            <li>
+              <a href="#" class="quicklink-link">Privacy</a>
+            </li>
+
+          </ul>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-pinterest"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2022 <a href="#">codewithsadee</a>. All Rights Reserved
+        </p>
+
+        <img src="./assets/images/footer-bottom-img.png" alt="Online banking companies logo" class="footer-bottom-img">
+
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Go To Top -->
+  <a href="#top" class="go-top" data-go-top>
+    <ion-icon name="chevron-up"></ion-icon>
+  </a>
+
+  <!-- Custom JS -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- Ionicon -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <!-- Dynamic Content Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Get URL parameters
+      const urlParams = new URLSearchParams(window.location.search);
+      
+      // If parameters exist, update movie details
+      if (urlParams.size > 0) {
+        // Update title
+        if (urlParams.get('title')) {
+          document.title = decodeURIComponent(urlParams.get('title').replace(/\+/g, ' ')) + ' | Movie Hub';
+          document.getElementById('detail-title').textContent = decodeURIComponent(urlParams.get('title').replace(/\+/g, ' '));
+        }
+        
+        // Update year
+        if (urlParams.get('year')) {
+          document.getElementById('detail-year').textContent = urlParams.get('year');
+          document.querySelector('time[datetime]').textContent = urlParams.get('year');
+        }
+        
+        // Update duration
+        if (urlParams.get('duration')) {
+          const duration = urlParams.get('duration') === 'N/A' ? 'N/A' : urlParams.get('duration') + ' min';
+          document.getElementById('detail-duration').textContent = duration;
+          document.querySelector('time[datetime="PT115M"]').textContent = duration;
+        }
+        
+        // Update image
+        if (urlParams.get('image')) {
+          const imgPath = './assets/images/' + decodeURIComponent(urlParams.get('image').replace(/\+/g, ' '));
+          document.getElementById('detail-poster').src = imgPath;
+          document.getElementById('detail-poster').alt = decodeURIComponent(urlParams.get('title').replace(/\+/g, ' ')) + ' movie poster';
+          
+          // Update download link
+          document.getElementById('detail-download').href = imgPath;
+        }
+        
+        // Update genres
+        if (urlParams.get('genre')) {
+          const genreWrapper = document.getElementById('detail-genres');
+          genreWrapper.innerHTML = '';
+          const genres = decodeURIComponent(urlParams.get('genre')).split(',');
+          
+          genres.forEach((genre, index) => {
+            const link = document.createElement('a');
+            link.href = '#';
+            link.textContent = genre.trim();
+            genreWrapper.appendChild(link);
+            
+            // Add comma if not the last genre
+            if (index < genres.length - 1) {
+              genreWrapper.appendChild(document.createTextNode(', '));
+            }
+          });
+        }
+        
+        // Update storyline
+        if (urlParams.get('storyline')) {
+          document.getElementById('detail-storyline').textContent = 
+            decodeURIComponent(urlParams.get('storyline').replace(/\+/g, ' '));
+        }
+        
+        // Update rating (if displayed on this page)
+        const ratingElement = document.querySelector('.rating data');
+        if (ratingElement && urlParams.get('rating')) {
+          ratingElement.textContent = urlParams.get('rating');
+        }
+      }
+    });
+  </script>
+
+</body>
+
+</html>

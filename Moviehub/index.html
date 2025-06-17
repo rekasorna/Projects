@@ -1,0 +1,1389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Hub - Best movie collections</title>
+
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body id="top">
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <div class="overlay" data-overlay></div>
+
+      <a href="./index.html" class="logo" style="display: flex; align-items: center; gap: 10px; text-decoration: none;">
+        <img src="./assets/images/movie-icon.png" alt="Movie Hub logo" style="height: 50px; margin-bottom: 10px;">
+        <p class="hero-subtitle" style="color: azure; margin: 0;">Movie Hub</p>
+      </a>
+    
+
+      <div class="header-actions">
+
+        <button class="search-btn">
+          <ion-icon name="search-outline"></ion-icon>
+        </button>
+
+        <div class="lang-wrapper">
+          <label for="language">
+            <ion-icon name="globe-outline"></ion-icon>
+          </label>
+
+          <select name="language" id="language">
+            <option value="en">EN</option>
+            <option value="au">AU</option>
+            <option value="ar">AR</option>
+            <option value="tu">TU</option>
+          </select>
+        </div>
+      <a href="sign_in.html">
+        <button class="btn btn-primary">Sign in</button>
+      </a>
+      </div>
+
+      <button class="menu-open-btn" data-menu-open-btn>
+        <ion-icon name="reorder-two"></ion-icon>
+      </button>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+
+          <a href="./index.html" class="logo">
+            <img src="./assets/images/logo.svg" alt="Movie Hub logo">
+          </a>
+
+          <button class="menu-close-btn" data-menu-close-btn>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+
+        </div>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="./index.html" class="navbar-link">Home</a>
+          </li>
+
+          <li>
+            <a href="#top-rated" class="navbar-link">Movie</a>
+          </li>
+
+          <li>
+            <a href="#tv-series" class="navbar-link">webseries</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">Pricing</a>
+          </li>
+
+        </ul>
+
+        <ul class="navbar-social-list">
+
+          <li>
+            <a href="#" class="navbar-social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-social-link">
+              <ion-icon name="logo-pinterest"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+    <article>
+
+      <!--- #HERO --->
+
+      <section class="hero">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <p class="hero-subtitle">Movie Hub</p>
+
+            <h1 class="h1 hero-title">
+              Unlimited <strong>Movie</strong>, TVs Shows, & More.
+            </h1>
+
+            <div class="meta-wrapper">
+
+              <div class="badge-wrapper">
+                <div class="badge badge-fill">PG 18</div>
+
+                <div class="badge badge-outline">HD</div>
+              </div>
+
+              <div class="ganre-wrapper">
+                <a href="#">Romance,</a>
+
+                <a href="#">Drama</a>
+              </div>
+
+              <div class="date-time">
+
+                <div>
+                  <ion-icon name="calendar-outline"></ion-icon>
+
+                  <time datetime="2022">2025</time>
+                </div>
+
+                <div>
+                  <ion-icon name="time-outline"></ion-icon>
+
+                  <time datetime="PT128M">128 min</time>
+                </div>
+
+              </div>
+
+            </div>
+
+            <button class="btn btn-primary">
+              <ion-icon name="play"></ion-icon>
+
+              <span>Watch now</span>
+            </button>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!--- #TOP RATED --->
+
+      <section class="top-rated" id="top-rated">
+        <div class="container">
+
+          <p class="section-subtitle">Online Streaming</p>
+
+          <h2 class="h2 section-title">Top Rated Movies</h2>
+
+          <ul class="filter-list">
+
+            <li>
+              <button class="filter-btn">Drama</button>
+            </li>
+
+            <li>
+              <button class="filter-btn">Thriller</button>
+            </li>
+
+            <li>
+              <button class="filter-btn">Action</button>
+            </li>
+
+            <li>
+              <button class="filter-btn">Sci-Fi</button>
+            </li>
+
+            <li>
+              <button class="filter-btn">Love</button>
+            </li>
+
+            <li>
+              <button class="filter-btn">Comedy</button>
+            </li>
+
+          </ul>
+
+          <ul class="movies-list">
+
+            <li>
+              <div class="movie-card">
+
+                <a href="./movie-details.html?title=Jurassic+World&year=2015&duration=137&rating=8.5&image=JURASSIC+WORLD+(2015).jpg&video=Jurassic_world.mp4&genre=Action,Adventure,Sci-Fi&storyline=A+new+theme+park+featuring+genetically+engineered+dinosaurs+becomes+a+disaster+when+the+dinosaurs+escape.">
+                  <figure class="card-banner">
+                    <img src="./assets/images/JURASSIC WORLD (2015).jpg" alt="Jurassic World movie poster">
+                    <video class="card-video" src="./assets/videos/Jurassic_world.mp4" muted loop></video>
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./movie-details.html?title=Jurassic+World&year=2015&duration=137&rating=8.5&image=JURASSIC+WORLD+(2015).jpg&video=Jurassic_world.mp4&genre=Action,Adventure,Sci-Fi&storyline=A+new+theme+park+featuring+genetically+engineered+dinosaurs+becomes+a+disaster+when+the+dinosaurs+escape.">
+                    <h3 class="card-title">Jurassic World</h3>
+                  </a>
+
+                  <time datetime="2022">2015</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">HD</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="PT137M">137 min</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <data>8.5</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="movie-card">
+
+                <a href="./movie-details.html?title=Avengers+-+Endgame&year=2019&duration=126&rating=NR&image=endgame.jpg&video=Endgame.mp4&genre=Action,Adventure,Sci-Fi&storyline=After+the+devastating+events+of+Avengers:+Infinity+War,+the+universe+is+in+ruins.+With+the+help+of+remaining+allies,+the+Avengers+assemble+once+more+to+reverse+Thanos'+actions+and+restore+balance+to+the+universe.">
+                  <figure class="card-banner">
+                    <img src="./assets/images/endgame.jpg" alt="Avengers Endgame movie poster">
+                    <video class="card-video" src="./assets/videos/Endgame.mp4" muted loop></video>
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./movie-details.html?title=Avengers+-+Endgame&year=2019&duration=126&rating=NR&image=endgame.jpg&video=Endgame.mp4&genre=Action,Adventure,Sci-Fi&storyline=After+the+devastating+events+of+Avengers:+Infinity+War,+the+universe+is+in+ruins.+With+the+help+of+remaining+allies,+the+Avengers+assemble+once+more+to+reverse+Thanos'+actions+and+restore+balance+to+the+universe.">
+                    <h3 class="card-title">Avengers - Endgame</h3>
+                  </a>
+
+                  <time datetime="2022">2019</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">4K</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="PT126M">126 min</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <data>NR</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="movie-card">
+
+                <a href="./movie-details.html?title=Leo&year=2023&duration=N/A&rating=NR&image=Leo+-+Vijay.jpg&video=Leo.mp4&genre=Action,Thriller&storyline=Leo+is+a+high-octane+action+thriller+starring+Vijay+in+the+lead+role.">
+                  <figure class="card-banner">
+                    <img src="./assets/images/Leo - Vijay.jpg" alt="Leo movie poster">
+                    <video class="card-video" src="./assets/videos/Leo.mp4" muted loop></video>
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./movie-details.html?title=Leo&year=2023&duration=N/A&rating=NR&image=Leo+-+Vijay.jpg&video=Leo.mp4&genre=Action,Thriller&storyline=Leo+is+a+high-octane+action+thriller+starring+Vijay+in+the+lead+role.">
+                    <h3 class="card-title">Leo</h3>
+                  </a>
+
+                  <time datetime="2022">2023</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">2K</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="">N/A</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <data>NR</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="movie-card">
+
+                <a href="./movie-details.html?title=Moana&year=2016&duration=107&rating=NR&image=Disney+Moana-Ocean+Floor+Wall+Poster.jpg&video=Moana.mp4&genre=Animation,Adventure,Comedy&storyline=In+Ancient+Polynesia,+when+a+terrible+curse+incurred+by+the+Demigod+Maui+reaches+an+impulsive+Princess+Moana's+island,+she+answers+the+Ocean's+call+to+seek+out+the+Demigod+to+set+things+right.">
+                  <figure class="card-banner">
+                    <img src="./assets/images/Disney Moana-Ocean Floor Wall Poster.jpg" alt="Moana movie poster">
+                    <video class="card-video" src="./assets/videos/Moana.mp4" muted loop></video>
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./movie-details.html?title=Moana&year=2016&duration=107&rating=NR&image=Disney+Moana-Ocean+Floor+Wall+Poster.jpg&video=Moana.mp4&genre=Animation,Adventure,Comedy&storyline=In+Ancient+Polynesia,+when+a+terrible+curse+incurred+by+the+Demigod+Maui+reaches+an+impulsive+Princess+Moana's+island,+she+answers+the+Ocean's+call+to+seek+out+the+Demigod+to+set+things+right.">
+                    <h3 class="card-title">Moana</h3>
+                  </a>
+
+                  <time datetime="2022">2016</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">HD</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="PT107M">107 min</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <data>NR</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="movie-card">
+
+                <a href="./movie-details.html?title=Loki+Season+01&year=2021&duration=122&rating=7.8&image=Loki,+season+01+_+Michael+Waldron+-+2021.jpg&video=Loki.mp4&genre=Action,Adventure,Sci-Fi&storyline=The+mercurial+villain+Loki+resumes+his+role+as+the+God+of+Mischief+in+a+new+series+that+takes+place+after+the+events+of+Avengers:+Endgame.">
+                  <figure class="card-banner">
+                    <img src="./assets/images/Loki, season 01 _ Michael Waldron - 2021.jpg" alt="Loki Season 01 poster">
+                    <video class="card-video" src="./assets/videos/Loki.mp4" muted loop></video>
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./movie-details.html?title=Loki+Season+01&year=2021&duration=122&rating=7.8&image=Loki,+season+01+_+Michael+Waldron+-+2021.jpg&video=Loki.mp4&genre=Action,Adventure,Sci-Fi&storyline=The+mercurial+villain+Loki+resumes+his+role+as+the+God+of+Mischief+in+a+new+series+that+takes+place+after+the+events+of+Avengers:+Endgame.">
+                    <h3 class="card-title">Loki Season 01</h3>
+                  </a>
+
+                  <time datetime="2022">2021</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">2K</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="PT122M">122 min</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <data>7.8</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="movie-card">
+
+                <a href="./movie-details.html?title=Joker&year=2019&duration=104&rating=5.9&image=Joker+-+Poster+-+Federico+Mauro.jpg&video=Joker.mp4&genre=Crime,Drama,Thriller&storyline=In+Gotham+City,+mentally+troubled+comedian+Arthur+Fleck+is+disregarded+and+mistreated+by+society.+He+then+embarks+on+a+downward+spiral+of+revolution+and+bloody+crime.">
+                  <figure class="card-banner">
+                    <img src="./assets/images/Joker - Poster - Federico Mauro.jpg" alt="Joker movie poster">
+                    <video class="card-video" src="./assets/videos/Joker.mp4" muted loop></video>
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./movie-details.html?title=Joker&year=2019&duration=104&rating=5.9&image=Joker+-+Poster+-+Federico+Mauro.jpg&video=Joker.mp4&genre=Crime,Drama,Thriller&storyline=In+Gotham+City,+mentally+troubled+comedian+Arthur+Fleck+is+disregarded+and+mistreated+by+society.+He+then+embarks+on+a+downward+spiral+of+revolution+and+bloody+crime.">
+                    <h3 class="card-title">Joker</h3>
+                  </a>
+
+                  <time datetime="2022">2019</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">HD</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="PT104M">104 min</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <data>5.9</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="movie-card">
+
+                <a href="./movie-details.html?title=Harry+Potter&year=2001&duration=106&rating=7.0&image=Harry+Potter+And+The+Philosopher's+Stone.jpg&video=Harry_potter.mp4&genre=Adventure,Family,Fantasy&storyline=An+orphaned+boy+enrolls+in+a+school+of+wizardry,+where+he+learns+the+truth+about+himself,+his+family+and+the+terrible+evil+that+haunts+the+magical+world.">
+                  <figure class="card-banner">
+                    <img src="./assets/images/Harry Potter And The Philosopher's Stone.jpg" alt="Harry Potter movie poster">
+                    <video class="card-video" src="./assets/videos/Harry_potter.mp4" muted loop></video>
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./movie-details.html?title=Harry+Potter&year=2001&duration=106&rating=7.0&image=Harry+Potter+And+The+Philosopher's+Stone.jpg&video=Harry_potter.mp4&genre=Adventure,Family,Fantasy&storyline=An+orphaned+boy+enrolls+in+a+school+of+wizardry,+where+he+learns+the+truth+about+himself,+his+family+and+the+terrible+evil+that+haunts+the+magical+world.">
+                    <h3 class="card-title">Harry Potter</h3>
+                  </a>
+
+                  <time datetime="2022">2001</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">4K</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="PT106M">106 min</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <data>7.0</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="movie-card">
+
+                <a href="./movie-details.html?title=Squid+Game&year=2021&duration=115&rating=7.7&image=Squid+Game+2.jpg&video=Squid_game.mp4&genre=Action,Drama,Mystery&storyline=Hundreds+of+cash-strapped+players+accept+a+strange+invitation+to+compete+in+children's+games.+Inside,+a+prize+awaits+with+deadly+high+stakes.">
+                  <figure class="card-banner">
+                    <img src="./assets/images/Squid Game 2.jpg" alt="Squid Game poster">
+                    <video class="card-video" src="./assets/videos/Squid_game.mp4" muted loop></video>
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./movie-details.html?title=Squid+Game&year=2021&duration=115&rating=7.7&image=Squid+Game+2.jpg&video=Squid_game.mp4&genre=Action,Drama,Mystery&storyline=Hundreds+of+cash-strapped+players+accept+a+strange+invitation+to+compete+in+children's+games.+Inside,+a+prize+awaits+with+deadly+high+stakes.">
+                    <h3 class="card-title">Squid Game</h3>
+                  </a>
+
+                  <time datetime="2021">2021</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">4K</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="PT115M">115 min</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <data>7.7</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="movie-card">
+
+                <a href="./movie-details.html?title=Master&year=2021&duration=47&rating=8.6&image=master.jpg&video=Master.mp4&genre=Action,Drama,Thriller&storyline=An+alcoholic+professor+is+sent+to+a+juvenile+school,+where+he+clashes+with+a+sociopathic+student+who+makes+his+life+a+living+hell.">
+                  <figure class="card-banner">
+                    <img src="./assets/images/master.jpg" alt="Master movie poster">
+                    <video class="card-video" src="./assets/videos/Master.mp4" muted loop></video>
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./movie-details.html?title=Master&year=2021&duration=47&rating=8.6&image=master.jpg&video=Master.mp4&genre=Action,Drama,Thriller&storyline=An+alcoholic+professor+is+sent+to+a+juvenile+school,+where+he+clashes+with+a+sociopathic+student+who+makes+his+life+a+living+hell.">
+                    <h3 class="card-title">Master</h3>
+                  </a>
+
+                  <time datetime="2022">2021</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">2K</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="PT47M">47 min</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <data>8.6</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="movie-card">
+
+                <a href="./movie-details.html?title=Halo&year=2022&duration=59&rating=8.8&image=series-2.png&video=&genre=Action,Adventure,Sci-Fi&storyline=In+the+26th+century,+humanity+is+locked+in+a+war+with+the+Covenant,+a+theocratic+alliance+of+aliens+who+believe+the+path+to+salvation+is+the+extermination+of+the+human+race.">
+                  <figure class="card-banner">
+                    <img src="./assets/images/series-2.png" alt="Halo series poster">
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./movie-details.html?title=Halo&year=2022&duration=59&rating=8.8&image=series-2.png&video=&genre=Action,Adventure,Sci-Fi&storyline=In+the+26th+century,+humanity+is+locked+in+a+war+with+the+Covenant,+a+theocratic+alliance+of+aliens+who+believe+the+path+to+salvation+is+the+extermination+of+the+human+race.">
+                    <h3 class="card-title">Halo</h3>
+                  </a>
+
+                  <time datetime="2022">2022</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">2K</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="PT59M">59 min</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <data>8.8</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="movie-card">
+
+                <a href="./movie-details.html?title=Vikings:+Valhalla&year=2022&duration=51&rating=8.3&image=series-3.png&video=&genre=Action,Adventure,Drama&storyline=A+sequel+to+History's+VIKINGS,+set+100+years+later+and+centering+on+the+adventures+of+Leif+Erikson,+Freydis,+Harald+Hardrada,+and+the+Norman+King+William+the+Conqueror.">
+                  <figure class="card-banner">
+                    <img src="./assets/images/series-3.png" alt="Vikings: Valhalla poster">
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./movie-details.html?title=Vikings:+Valhalla&year=2022&duration=51&rating=8.3&image=series-3.png&video=&genre=Action,Adventure,Drama&storyline=A+sequel+to+History's+VIKINGS,+set+100+years+later+and+centering+on+the+adventures+of+Leif+Erikson,+Freydis,+Harald+Hardrada,+and+the+Norman+King+William+the+Conqueror.">
+                    <h3 class="card-title">Vikings: Valhalla</h3>
+                  </a>
+
+                  <time datetime="2022">2022</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">2K</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="PT51M">51 min</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <data>8.3</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="movie-card">
+
+                <a href="./movie-details.html?title=Money+Heist&year=2017&duration=70&rating=8.3&image=series-4.png&video=&genre=Action,Crime,Mystery&storyline=An+unusual+group+of+robbers+attempt+to+carry+out+the+most+perfect+robbery+in+Spanish+history+—+stealing+2.4+billion+euros+from+the+Royal+Mint+of+Spain.">
+                  <figure class="card-banner">
+                    <img src="./assets/images/series-4.png" alt="Money Heist poster">
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./movie-details.html?title=Money+Heist&year=2017&duration=70&rating=8.3&image=series-4.png&video=&genre=Action,Crime,Mystery&storyline=An+unusual+group+of+robbers+attempt+to+carry+out+the+most+perfect+robbery+in+Spanish+history+—+stealing+2.4+billion+euros+from+the+Royal+Mint+of+Spain.">
+                    <h3 class="card-title">Money Heist</h3>
+                  </a>
+
+                  <time datetime="2017">2017</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">4K</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="PT70M">70 min</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <data>8.3</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="movie-card">
+
+                <a href="./movie-details.html?title=The+Batman&year=2022&duration=176&rating=7.9&image=batman.jpg&video=&genre=Action,Crime,Drama&storyline=When+a+sadistic+killer+begins+murdering+key+political+figures+in+Gotham,+Batman+is+forced+to+investigate+the+city's+hidden+corruption+and+question+his+family's+involvement.">
+                  <figure class="card-banner">
+                    <img src="./assets/images/batman.jpg" alt="The Batman poster">
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./movie-details.html?title=The+Batman&year=2022&duration=176&rating=7.9&image=batman.jpg&video=&genre=Action,Crime,Drama&storyline=When+a+sadistic+killer+begins+murdering+key+political+figures+in+Gotham,+Batman+is+forced+to+investigate+the+city's+hidden+corruption+and+question+his+family's+involvement.">
+                    <h3 class="card-title">The Batman</h3>
+                  </a>
+
+                  <time datetime="2022">2022</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">4K</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="PT176M">176 min</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <data>7.9</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="movie-card">
+
+                <a href="./movie-details.html?title=Uncharted&year=2022&duration=116&rating=7.0&image=movie-6.png&video=&genre=Action,Adventure&storyline=Street-smart+Nathan+Drake+is+recruited+by+seasoned+treasure+hunter+Victor+Sullivan+to+recover+a+fortune+lost+by+Ferdinand+Magellan+500+years+ago.">
+                  <figure class="card-banner">
+                    <img src="./assets/images/movie-6.png" alt="Uncharted movie poster">
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./movie-details.html?title=Uncharted&year=2022&duration=116&rating=7.0&image=movie-6.png&video=&genre=Action,Adventure&storyline=Street-smart+Nathan+Drake+is+recruited+by+seasoned+treasure+hunter+Victor+Sullivan+to+recover+a+fortune+lost+by+Ferdinand+Magellan+500+years+ago.">
+                    <h3 class="card-title">Uncharted</h3>
+                  </a>
+
+                  <time datetime="2022">2022</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">HD</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="PT116M">116 min</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <data>7.0</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="movie-card">
+
+                <a href="./movie-details.html?title=One+Piece&year=2023&duration=127&rating=6.5&image=Netflix+One+Piece+-+Teaser+Wall+Poster.jpg&video=&genre=Action,Adventure,Comedy&storyline=Monkey+D.+Luffy+and+his+pirate+crew+explore+a+fantastic+world+of+endless+oceans+and+exotic+islands+in+search+of+the+ultimate+treasure+known+as+One+Piece.">
+                  <figure class="card-banner">
+                    <img src="./assets/images/Netflix One Piece - Teaser Wall Poster.jpg" alt="One Piece poster">
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./movie-details.html?title=One+Piece&year=2023&duration=127&rating=6.5&image=Netflix+One+Piece+-+Teaser+Wall+Poster.jpg&video=&genre=Action,Adventure,Comedy&storyline=Monkey+D.+Luffy+and+his+pirate+crew+explore+a+fantastic+world+of+endless+oceans+and+exotic+islands+in+search+of+the+ultimate+treasure+known+as+One+Piece.">
+                    <h3 class="card-title">One Piece</h3>
+                  </a>
+
+                  <time datetime="2022">2023</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">2K</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="PT127M">127 min</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <data>6.5</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="movie-card">
+
+                <a href="./movie-details.html?title=Ted+2&year=2015&duration=131&rating=7.0&image=ted.jpg&video=&genre=Comedy&storyline=Newlywed+party-animal+Ted+and+Tami-Lynn+want+to+have+a+baby,+but+in+order+to+qualify+to+be+a+parent,+Ted+will+have+to+prove+he's+a+person+in+a+court+of+law.">
+                  <figure class="card-banner">
+                    <img src="./assets/images/ted.jpg" alt="Ted 2 poster">
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./movie-details.html?title=Ted+2&year=2015&duration=131&rating=7.0&image=ted.jpg&video=&genre=Comedy&storyline=Newlywed+party-animal+Ted+and+Tami-Lynn+want+to+have+a+baby,+but+in+order+to+qualify+to+be+a+parent,+Ted+will+have+to+prove+he's+a+person+in+a+court+of+law.">
+                    <h3 class="card-title">Ted 2</h3>
+                  </a>
+
+                  <time datetime="2021">2015</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">HD</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="PT131M">131 min</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <data>7.0</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>         
+
+        </div>
+      </section>
+
+      <!--- #UPCOMING --->
+
+      <section class="upcoming">
+        <div class="container">
+
+          <div class="flex-wrapper">
+
+            <div class="title-wrapper">
+              <p class="section-subtitle">Online Streaming</p>
+
+              <h2 class="h2 section-title">Upcoming Movies</h2>
+            </div>
+
+            <ul class="filter-list">
+
+              <li>
+                <button class="filter-btn">Movies</button>
+              </li>
+
+              <li>
+                <button class="filter-btn">TV Shows</button>
+              </li>
+
+              <li>
+                <button class="filter-btn">Anime</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="movies-list  has-scrollbar">
+
+            <li>
+              <div class="movie-card">
+
+                <a href="./movie-details.html?title=Jurassic+World+-+Rebirth&year=2025&duration=137&rating=NR&image=Jurassic+World+_+Rebirth+(7_2_25).jpg&video=&genre=Action,Adventure,Sci-Fi&storyline=The+next+chapter+in+the+Jurassic+World+series+promises+new+dinosaur+species+and+more+thrilling+adventures.">
+                  <figure class="card-banner">
+                    <img src="./assets/images/Jurassic World _ Rebirth (7_2_25).jpg" alt="Jurassic World Rebirth">
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./movie-details.html?title=Jurassic+World+-+Rebirth&year=2025&duration=137&rating=NR&image=Jurassic+World+_+Rebirth+(7_2_25).jpg&video=&genre=Action,Adventure,Sci-Fi&storyline=The+next+chapter+in+the+Jurassic+World+series+promises+new+dinosaur+species+and+more+thrilling+adventures.">
+                    <h3 class="card-title">Jurassic World - Rebirth</h3>
+                  </a>
+
+                  <time datetime="2022">2025</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">HD</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="PT137M">137 min</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <data>NR</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="movie-card">
+
+                <a href="./movie-details.html?title=Superman+Legacy&year=2025&duration=126&rating=NR&image=Superman+_+Legacy+(7_11_25).jpg&video=&genre=Action,Adventure,Sci-Fi&storyline=A+new+take+on+the+Superman+story+that+explores+Clark+Kent's+early+days+as+the+Man+of+Steel.">
+                  <figure class="card-banner">
+                    <img src="./assets/images/Superman _ Legacy (7_11_25).jpg" alt="Superman Legacy">
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./movie-details.html?title=Superman+Legacy&year=2025&duration=126&rating=NR&image=Superman+_+Legacy+(7_11_25).jpg&video=&genre=Action,Adventure,Sci-Fi&storyline=A+new+take+on+the+Superman+story+that+explores+Clark+Kent's+early+days+as+the+Man+of+Steel.">
+                    <h3 class="card-title">Superman Legacy</h3>
+                  </a>
+
+                  <time datetime="2022">2025</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">4K</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="PT126M">126 min</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <data>NR</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="movie-card">
+
+                <a href="./movie-details.html?title=Wolf+Man&year=2025&duration=N/A&rating=NR&image=wolf-man-poster-2.webp&video=&genre=Horror,Thriller&storyline=A+modern+reimagining+of+the+classic+Universal+Monster+about+a+man+whose+family+is+terrorized+by+a+lethal+predator.">
+                  <figure class="card-banner">
+                    <img src="./assets/images/wolf-man-poster-2.webp" alt="Wolf man">
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./movie-details.html?title=Wolf+Man&year=2025&duration=N/A&rating=NR&image=wolf-man-poster-2.webp&video=&genre=Horror,Thriller&storyline=A+modern+reimagining+of+the+classic+Universal+Monster+about+a+man+whose+family+is+terrorized+by+a+lethal+predator.">
+                    <h3 class="card-title">Wolf man</h3>
+                  </a>
+
+                  <time datetime="2022">2025</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">2K</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="">N/A</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <data>NR</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="movie-card">
+
+                <a href="./movie-details.html?title=Snow+White&year=2025&duration=107&rating=NR&image=snow-white-movie-poster.webp&video=&genre=Adventure,Family,Fantasy&storyline=A+live-action+adaptation+of+the+Disney+animated+classic+about+a+young+princess+who+escapes+her+evil+stepmother+and+finds+refuge+with+seven+dwarfs.">
+                  <figure class="card-banner">
+                    <img src="./assets/images/snow-white-movie-poster.webp" alt="Snow white">
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./movie-details.html?title=Snow+White&year=2025&duration=107&rating=NR&image=snow-white-movie-poster.webp&video=&genre=Adventure,Family,Fantasy&storyline=A+live-action+adaptation+of+the+Disney+animated+classic+about+a+young+princess+who+escapes+her+evil+stepmother+and+finds+refuge+with+seven+dwarfs.">
+                    <h3 class="card-title">Snow white</h3>
+                  </a>
+
+                  <time datetime="2022">2025</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">HD</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="PT107M">107 min</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <data>NR</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+      <!--- #SERVICE --->
+
+      <section class="service">
+        <div class="container">
+
+          <div class="service-banner">
+            <figure>
+              <img src="./assets/images/3d-cinema-film-projector.jpg" alt="HD 4k resolution! only $3.99" style="width: 400px; height: auto;">
+            </figure>
+
+            <a href="./assets/images/service-banner.jpg" download class="service-btn">
+              <span>Download</span>
+
+              <ion-icon name="download-outline"></ion-icon>
+            </a>
+          </div>
+
+          <div class="service-content">
+
+            <p class="service-subtitle">Our Services</p>
+
+            <h2 class="h2 service-title">Download Your Shows Watch Offline.</h2>
+
+            <p class="service-text">
+              Lorem ipsum dolor sit amet, consecetur adipiscing elseddo eiusmod tempor.There are many variations of
+              passages of lorem
+              Ipsum available, but the majority have suffered alteration in some injected humour.
+            </p>
+
+            <ul class="service-list">
+
+              <li>
+                <div class="service-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="tv"></ion-icon>
+                  </div>
+
+                  <div class="card-content">
+                    <h3 class="h3 card-title">Enjoy on Your TV.</h3>
+
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet, consecetur adipiscing elit, sed do eiusmod tempor.
+                    </p>
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="videocam"></ion-icon>
+                  </div>
+
+                  <div class="card-content">
+                    <h3 class="h3 card-title">Watch Everywhere.</h3>
+
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet, consecetur adipiscing elit, sed do eiusmod tempor.
+                    </p>
+                  </div>
+
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+      </section>
+      
+      <!--- #TV SERIES --->
+
+      <section class="tv-series" id="tv-series">
+        <div class="container">
+
+          <p class="section-subtitle">Best WEB Series</p>
+
+          <h2 class="h2 section-title">World Best WEB Series</h2>
+
+          <ul class="movies-list">
+
+            <li>
+              <div class="movie-card">
+
+                <a href="./movie-details.html?title=Master&year=2021&duration=47&rating=8.6&image=master.jpg&video=Master.mp4&genre=Action,Drama,Thriller&storyline=An+alcoholic+professor+is+sent+to+a+juvenile+school,+where+he+clashes+with+a+sociopathic+student+who+makes+his+life+a+living+hell.">
+                  <figure class="card-banner">
+                    <img src="./assets/images/master.jpg" alt="Master movie poster">
+                    <video class="card-video" src="./assets/videos/Master.mp4" muted loop></video>
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./movie-details.html?title=Master&year=2021&duration=47&rating=8.6&image=master.jpg&video=Master.mp4&genre=Action,Drama,Thriller&storyline=An+alcoholic+professor+is+sent+to+a+juvenile+school,+where+he+clashes+with+a+sociopathic+student+who+makes+his+life+a+living+hell.">
+                    <h3 class="card-title">Master</h3>
+                  </a>
+
+                  <time datetime="2022">2021</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">2K</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="PT47M">47 min</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <data>8.6</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="movie-card">
+
+                <a href="./movie-details.html?title=Halo&year=2022&duration=59&rating=8.8&image=series-2.png&video=&genre=Action,Adventure,Sci-Fi&storyline=In+the+26th+century,+humanity+is+locked+in+a+war+with+the+Covenant,+a+theocratic+alliance+of+aliens+who+believe+the+path+to+salvation+is+the+extermination+of+the+human+race.">
+                  <figure class="card-banner">
+                    <img src="./assets/images/series-2.png" alt="Halo series poster">
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./movie-details.html?title=Halo&year=2022&duration=59&rating=8.8&image=series-2.png&video=&genre=Action,Adventure,Sci-Fi&storyline=In+the+26th+century,+humanity+is+locked+in+a+war+with+the+Covenant,+a+theocratic+alliance+of+aliens+who+believe+the+path+to+salvation+is+the+extermination+of+the+human+race.">
+                    <h3 class="card-title">Halo</h3>
+                  </a>
+
+                  <time datetime="2022">2022</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">2K</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="PT59M">59 min</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <data>8.8</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="movie-card">
+
+                <a href="./movie-details.html?title=Vikings:+Valhalla&year=2022&duration=51&rating=8.3&image=series-3.png&video=&genre=Action,Adventure,Drama&storyline=A+sequel+to+History's+VIKINGS,+set+100+years+later+and+centering+on+the+adventures+of+Leif+Erikson,+Freydis,+Harald+Hardrada,+and+the+Norman+King+William+the+Conqueror.">
+                  <figure class="card-banner">
+                    <img src="./assets/images/series-3.png" alt="Vikings: Valhalla poster">
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./movie-details.html?title=Vikings:+Valhalla&year=2022&duration=51&rating=8.3&image=series-3.png&video=&genre=Action,Adventure,Drama&storyline=A+sequel+to+History's+VIKINGS,+set+100+years+later+and+centering+on+the+adventures+of+Leif+Erikson,+Freydis,+Harald+Hardrada,+and+the+Norman+King+William+the+Conqueror.">
+                    <h3 class="card-title">Vikings: Valhalla</h3>
+                  </a>
+
+                  <time datetime="2022">2022</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">2K</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="PT51M">51 min</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <data>8.3</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="movie-card">
+
+                <a href="./movie-details.html?title=Money+Heist&year=2017&duration=70&rating=8.3&image=series-4.png&video=&genre=Action,Crime,Mystery&storyline=An+unusual+group+of+robbers+attempt+to+carry+out+the+most+perfect+robbery+in+Spanish+history+—+stealing+2.4+billion+euros+from+the+Royal+Mint+of+Spain.">
+                  <figure class="card-banner">
+                    <img src="./assets/images/series-4.png" alt="Money Heist poster">
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./movie-details.html?title=Money+Heist&year=2017&duration=70&rating=8.3&image=series-4.png&video=&genre=Action,Crime,Mystery&storyline=An+unusual+group+of+robbers+attempt+to+carry+out+the+most+perfect+robbery+in+Spanish+history+—+stealing+2.4+billion+euros+from+the+Royal+Mint+of+Spain.">
+                    <h3 class="card-title">Money Heist</h3>
+                  </a>
+
+                  <time datetime="2017">2017</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">4K</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="PT70M">70 min</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <data>8.3</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+      <!--- #CTA --->
+
+      <section class="cta">
+        <div class="container">
+
+          <div class="title-wrapper">
+            <h2 class="cta-title">Trial start first 30 days.</h2>
+
+            <p class="cta-text">
+              Enter your email to create or restart your membership.
+            </p>
+          </div>
+
+          <form action="" class="cta-form">
+            <input type="email" name="email" required placeholder="Enter your email" class="email-field">
+
+            <button type="submit" class="cta-form-btn">Get started</button>
+          </form>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+  <!--- #FOOTER --->
+
+  <footer class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand-wrapper">
+
+          <a href="./index.html" class="logo" style="display: flex; align-items: center; gap: 10px; text-decoration: none;">
+            <img src="./assets/images/movie-icon.png" alt="Movie Hub logo" style="height: 50px; margin-bottom: 10px;">
+            <p class="hero-subtitle" style="color: azure; margin: 0;">Movie Hub</p>
+          </a>
+
+          <ul class="footer-list">
+
+            <li>
+              <a href="./index.html" class="footer-link">Home</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Movie</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">TV Show</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Web Series</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Pricing</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="quicklink-wrapper">
+
+          <ul class="quicklink-list">
+
+            <li>
+              <a href="#" class="quicklink-link">Faq</a>
+            </li>
+
+            <li>
+              <a href="#" class="quicklink-link">Help center</a>
+            </li>
+
+            <li>
+              <a href="#" class="quicklink-link">Terms of use</a>
+            </li>
+
+            <li>
+              <a href="#" class="quicklink-link">Privacy</a>
+            </li>
+
+          </ul>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-pinterest"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2025 <a href="#">Team 7</a>. All Rights Reserved
+        </p>
+
+        <img src="./assets/images/footer-bottom-img.png" alt="Online banking companies logo" class="footer-bottom-img">
+
+      </div>
+    </div>
+
+  </footer>
+
+  <!--- #GO TO TOP --->
+
+  <a href="#top" class="go-top" data-go-top>
+    <ion-icon name="chevron-up"></ion-icon>
+  </a>
+
+  <!--- custom js link -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--- ionicon link -->
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+
+</html>

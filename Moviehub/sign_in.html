@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGN IN page</title>
+    <style>
+        form{
+            margin: 20vh 55vh 55vh 55vh;
+            width: 500px;
+            border-style: solid;
+            border-color: white;
+            border-width: 2px;
+            background-color: white;
+            padding: 5px 30px 20px 30px;
+            background-color: transparent;
+            border-radius: 5px;
+        }
+        body{
+            background-image: url("assets/images/tv-series-bg.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+        .formation{
+            display: flex;
+            flex-direction: column;
+            padding: 5px;
+        }
+        .button{
+            margin-left: 5px;
+            margin-top: 5px;
+            border-radius: 5px;
+        }
+        #submit:hover{
+            cursor: pointer;
+            box-shadow: 20px;
+            color: aliceblue;
+            background-color: gray;
+        }
+        #submit{
+            border-radius: 20px;
+            border: 1px solid black;
+            margin: 10px 0px 0px 0px;
+            padding: 10px 20px;
+            background-color: white;
+        }
+        label{
+            margin-bottom: 5px;
+        } 
+        input{
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 20px;
+        }
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="POST">
+        <h1 style="text-align: center; color: white;" >SIGN IN</h1>
+        <div class="formation">
+            <label for="username" style="font-size:larger;"><strong style="color: azure;">USERNAME</strong></label>
+            <input for="username" name="username" type="text" placeholder="enter the name">
+            <span></span>
+        </div>
+        <div class="formation">
+            <label for="password" style="font-size: larger;"><strong style="color: azure;">PASSWORD</strong></label>
+            <input for="password" name="password" type="password" placeholder="enter the password">
+            <span></span>
+        </div>
+        <div class="button">
+            <button type="submit" name="submit" id="submit">SUBMIT</button>
+        </div>
+        <div>
+            <p style="color: azure;">Please SIGN UP if you don't have an account</p>
+        </div>
+        
+        <div>
+            <a href="sign_up.html">
+                <button type="button" id="submit">SIGN UP</button>
+            </a>
+        </div>
+    </form>
+</body>
+</html>
